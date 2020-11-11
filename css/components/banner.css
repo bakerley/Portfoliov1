@@ -42,6 +42,7 @@
   background-position: center;
   padding-top: 190px;
   padding-bottom: 170px;
+  border: none !important;
 }
 
 svg {

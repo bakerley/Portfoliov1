@@ -138,12 +138,12 @@ function closeModal() {
   body.classList.remove('open')
 }
 
-modalOuter.addEventListener('click', function (event) {
-  const isOutside = !event.target.closest('.modal-inner');
-  if (isOutside) {
-    closeModal();
-  }
-});
+// modalOuter.addEventListener('click', function (event) {
+//   const isOutside = !event.target.closest('.modal-inner');
+//   if (isOutside) {
+//     closeModal();
+//   }
+// });
 
 // Portfolio
 
