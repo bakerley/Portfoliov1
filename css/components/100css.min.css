@@ -93,6 +93,14 @@ nav .logo {
 }
 }
 
+@media (max-width: 767px) {
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
 .logo{
 	position:absolute;
 	top:25rem;
