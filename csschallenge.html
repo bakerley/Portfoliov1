@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3J4WNC8EM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C3J4WNC8EM');
+  </script>
   <meta charset="UTF-8">
   <title>
     100 Days CSS Challenge - Benoit Michelin
@@ -24,6 +33,13 @@
 </head>
 
 <body>
+
+  <!-- Just an image -->
+  <nav class="navbar fixed-top navbar-dark bg-special">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/benoit-logo-blanc.png" width="65" height="65" alt="logo-benoit-blanc">
+    </a>
+  </nav>
 
   <div id="website-body">
     <div class="logo">
@@ -172,6 +188,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 300) {
+        $('nav').removeClass('bg-special');
+        $('nav').addClass('bg-white');
+        $('nav img').attr('src', 'images/benoit-logo.png');
+      }
+      else {
+        $('nav img').attr('src', 'images/benoit-logo-blanc.png');
+        $('nav').removeClass('bg-white');
+        $('nav').addClass('bg-special');
+      }
+    })
+  </script>
+  <!-- <nav class="navbar navbar-light dark">
+      <a class="navbar-brand" href="#">
+        <img src="images/benoit-logo-blanc.png" width="65" height="65" alt="logo-benoit-blanc">
+      </a>
+    </nav> -->
   <script>
     new WOW().init();
   </script>
