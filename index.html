@@ -16,10 +16,19 @@
   <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/5.15.1/css/font-awesome.min.css'> -->
   <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@5.0.4/dist/simplebar.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3J4WNC8EM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C3J4WNC8EM');
+  </script>
 </head>
 
 <body>
-
+  <!-- nav-bar -->
   <div class="responsive-bar">
     <div class="logo">
       <a href="#">
@@ -38,30 +47,29 @@
       </a>
     </div>
     <ul>
-      <li><a href="#section-0">About Me</a></li>
-      <li><a href="#section-5">Projects</a></li>
-      <li><a href="#section-2">Skills</a></li>
-      <li><a href="#section-3">Diplomas</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#diplomas">Diplomas</a></li>
     </ul>
   </nav>
-
+  <!-- banner section -->
   <div class="banner">
     <div class="container">
       <h1 class="banner-title-1">Hey there, I'm <strong>Benoit</strong>.</h1>
       <h2 class="banner-title-2">A web-developer coding in <span class="txt-rotate" data-period="1500"
           data-rotate='[ "HTML.", "CSS.", "Javascript.", "Ruby on Rails."]'></span>
       </h2>
-      <a class="btn btn-outline-custom1" href="#section-0"> View More </a>
+      <a class="btn btn-outline-custom1" href="#about"> View More </a>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon fill="white" points="0,100 100,0 100,100" />
     </svg>
   </div>
-
-
+  <!-- contact logos -->
   <section id="intro">
     <div class="container">
-      <a id="section-0"></a>
+      <a id="about"></a>
       <div class="cards-icon">
         <div class="top-card">
           <a href="https://www.linkedin.com/in/benoit-michelin-8996a999/" target="_blank">
@@ -86,7 +94,7 @@
       </div>
     </div>
   </section>
-
+  <!-- about me section -->
   <hr align="center" width="80%" color="#fafafa" size="0.5">
   <section id="about-me">
     <div class="container">
@@ -124,8 +132,9 @@
       </div>
     </div>
   </section>
-  <a id="section-5"></a>
-  <section class="je-portfolio d-flex align-items-center justify-content-center">
+  <!-- Projets section -->
+  <a id="projects"></a>
+  <section class="be-portfolio d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="w-100 d-flex">
         <h1 class="title-section">Projects
@@ -213,7 +222,9 @@
       </div>
     </div>
   </section>
-  <a id="section-2"></a>
+
+  <!-- Skills section -->
+  <a id="skills"></a>
   <section id="mywork">
     <section id="softskills">
       <hr align="center" width="80%" color="#fafafa" size="0.5">
@@ -275,7 +286,8 @@
       </div>
       </div>
     </section>
-    <a id="section-3"></a>
+    <!-- Education section -->
+    <a id="diplomas"></a>
     <section id="education">
       <div class="container">
         <h1 class="title-section">Diplomas</h1>
@@ -399,9 +411,8 @@
         </div>
       </div>
     </section>
-
   </section>
-  <a id="section-1"></a>
+  <!-- experience section -->
   <section id="experiences">
     <div class="container">
       <h1 class="title-section">Experiences</h1>
@@ -523,7 +534,7 @@
       </div>
     </div>
   </section>
-
+  <!-- footer section -->
   <section id="getintouch">
     <div class="container">
       <h2 class="intouch-title">Get in touch</h2>
@@ -543,10 +554,13 @@
       </div>
     </div>
   </section>
-
   <div class="footer">
-    <p>Benoit Michelin</p>
+    <div class="col-12 text-center">
+      Copyright &copy;
+      <script>document.write(+new Date().getFullYear());</script> - Benoit Michelin
+    </div>
   </div>
+
   <!-- Modal - Projet findway -->
   <div class="modal fade" id="findwayproject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
@@ -782,10 +796,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
   <!-- Animate on Scroll -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
   <!-- Simple bar -->
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -810,8 +822,12 @@
         $("nav ul").toggleClass("active")
       })
     })
+    $(document).ready(function () {
+      $("nav").click(function () {
+        $("nav ul").removeClass("active")
+      })
+    })
   </script>
-
 </body>
 
 </html>
