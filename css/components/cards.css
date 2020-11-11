@@ -1,0 +1,39 @@
+#intro {
+  background-color: #ffffff;
+  padding-top: 10px;
+  /* padding-bottom: 15px */
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.cards-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cards h4 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.acard {
+ text-align: center;
+ padding-top: 20px;
+}
+
+.acard img {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.top-card {
+  padding-top: 90px;
+  margin-left: 20px;
+}
+
+.highlight:hover {
+  transform: scale(1.1);
+}

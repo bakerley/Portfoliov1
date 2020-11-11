@@ -1,0 +1,26 @@
+/* #download {
+  background-color:#f4f9ff;
+  padding: 30px 0;
+}
+
+.btn-outline-custom3 {
+    color: #000000;
+    border-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.2);
+    padding: 5px 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.btn-outline-custom3:hover {
+  background-color: #000000;
+  color: #ffffff;
+} */
+
+.download-paragraph {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}

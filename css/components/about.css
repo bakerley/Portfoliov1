@@ -1,0 +1,17 @@
+#about-me {
+/* padding-top: 10px; */
+padding-bottom: 70px;
+background-image: linear-gradient( #ffffff, #fdfdff, #fbfcff, #f8faff, #f4f9ff);
+}
+
+.avatar-large {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  border: white 5px solid;
+  margin-bottom: 15px;
+}
+/* 
+.list-inline-item-1 {
+    display: inline-block;
+    margin-right: 50px;
+} */

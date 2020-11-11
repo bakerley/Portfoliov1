@@ -1,0 +1,127 @@
+#experiences {
+  background-image: linear-gradient( #ffffff, #fdfdff, #fbfcff, #f8faff, #f4f9ff);
+  padding-bottom: 85px;
+  padding-top: 40px;
+}
+
+/* .exp-title-2 {
+  font-weight: 700;
+  font-size: 18px;
+} */
+
+/* #exp-title {
+  color: rgba(0,0,0,0.7);
+  padding-top: 10px;
+} */
+
+.exp-link {
+  color: #004a8d;
+}
+
+.exp-link:hover {
+  color: #b01633;
+}
+
+.exp-card {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 15px;
+
+  margin-bottom: 20px;
+  border: 1px solid rgba(220,224,244,0.4);
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+  cursor: default;
+}
+
+.exp-card:hover {
+    box-shadow: 0 4px 7px rgba(0,0,0,0.25), 0 3px 5px rgba(0,0,0,0.22);
+    cursor: default;
+}
+
+.exp-info {
+  color: rgba(0,0,0,0.6);
+  font-size: 15px;
+/*  margin-left: -15px;*/
+}
+
+/* .exp-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0,0,0,0.6);
+  text-align: justify;
+} */
+
+.exp-logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.list-inline-1 {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul#imageGallery img {
+    width: 310px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+ul#imageGallery {
+    padding: 0;
+    align-items: center;
+}
+
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.date-custom {
+  font-size:15px;
+  font-weight:300;
+}
+
+.category-custom-2 {
+  float: right;
+  display:inline;
+  font-size:14px;
+  font-weight:400;
+  background-color:#ddedea;
+}
+
+@media only screen and (max-width: 767px) {
+    .category-custom-2 {
+        float: none;    }
+}
+
+@media only screen and (max-width: 767px) {
+    .date-custom {
+        text-align: center;
+        display: block;    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .list-inline-item {
+      text-align: center;
+        display: block;    }
+}
+
+
+
+
+

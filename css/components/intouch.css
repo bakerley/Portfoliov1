@@ -1,0 +1,37 @@
+#getintouch {
+  background-color: #004a8d;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.intouch-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+/* 
+.intouch-button {
+  text-align: center;
+} */
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.social a {
+    font-size: 4rem;
+    color: #FAFAFA;
+    opacity: 1;
+    transition: ease 300ms;
+    margin: 0 10px;
+}
+.social a:hover {
+  color:#f4f9ff;
+  transform: scale(1.1);
+}
