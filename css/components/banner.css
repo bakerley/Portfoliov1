@@ -63,10 +63,17 @@ svg {
     margin-right: 10px;
     padding: 7px 20px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .btn.btn-outline-custom1:hover {
   /* border-color: #fff; */
   background-color: #fff;
   color: #004e92;
+  z-index: 10;
+}
+
+.banner-container {
+  z-index: 5;
+  position: relative;
 }
