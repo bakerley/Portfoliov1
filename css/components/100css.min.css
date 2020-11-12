@@ -34,7 +34,7 @@ nav .logo {
   }
 
 .bg-special {
-	background-color:#030e35;
+	background-color: transparent;
 	transition: .5S;
 }
 
