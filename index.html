@@ -174,7 +174,6 @@
                 <h2><i class="fas fa-search"></i></h2>
                 <h4>Whatwaste</h4>
                 <p>Project - 2021</p>
-                <h4>/!\On Going/!\</p>
               </div>
             </div>
           </div>
@@ -513,13 +512,13 @@ production a clone of AirBnB and a Rails prototype.</p>
             <div class="card-edu">
               <div class="logo-edu">
                 <picture>
-                  <source type="image/webp" srcset="images/googledigital.webp" alt="Google Digital">
-                  <img src="images/googledigital.png" alt="Google Digital">
+                  <source type="image/webp" srcset="images/datacamp.webp" alt="Datacamp">
+                  <img src="images/datacamp.png" alt="Datacamp">
                 </picture>
-                <h2 class="h2-custom"> Google Digital Garage</h2>
+                <h2 class="h2-custom"> Datacamp</h2>
               </div>
-              <p class="custom-paragraph">Fundamentals of Digital Marketing</p>
-              <a href="assets/pdf/Google-digital-garage.png" target="_blank" rel="noopener">See Credentials</a>
+              <p class="custom-paragraph">Data Scientist with Python Track</p>
+              <a href="https://www.datacamp.com/statement-of-accomplishment/track/0be9e539c082648f5a332d312db4dd49bee57208" target="_blank" rel="noopener">See Credentials</a>
             </div>
           </div>
           <div class="col-s-12 col-md-4">
@@ -529,7 +528,7 @@ production a clone of AirBnB and a Rails prototype.</p>
                   <source type="image/webp" srcset="images/freecodecamp.webp" alt="freeCodeCamp">
                   <img src="images/freecodecamp.png" alt="freeCodeCamp">
                 </picture>
-                <h2 class="h2-custom"> freeCodeCamp</h2>
+                <h2 class="h2-custom"> FreeCodeCamp</h2>
               </div>
               <p class="custom-paragraph">JavaScript and Data Structures</p>
               <a href="https://www.freecodecamp.org/certification/bakerley/javascript-algorithms-and-data-structures"
@@ -544,7 +543,7 @@ production a clone of AirBnB and a Rails prototype.</p>
                   <source type="image/webp" srcset="images/freecodecamp.webp" alt="freeCodeCamp">
                   <img src="images/freecodecamp.png" alt="freeCodeCamp">
                 </picture>
-                <h2 class="h2-custom"> freeCodeCamp</h2>
+                <h2 class="h2-custom"> FreeCodeCamp</h2>
               </div>
               <p class="custom-paragraph">Responsive Web Design</p>
               <a href="https://www.freecodecamp.org/certification/bakerley/responsive-web-design" target="_blank"
@@ -969,46 +968,60 @@ production a clone of AirBnB and a Rails prototype.</p>
         <div class="modal-body">
           <div class="row">
             <div class="col-12 col-md-7">
-              <p>The idea of this project is to create a image classifier to recognize
+              <p>The idea of this project was to create a image classifier to recognize
               the waste in order to throw it in the right trash.</p>
-<!--               <div class="d-flex justify-content-start align-items-center">
-                <a class="be-btn" href="https://github.com/bakerley/rebuilt" target="_blank" rel="noopener">Access the
+              <div class="d-flex justify-content-start align-items-center">
+                <a class="be-btn" href="https://github.com/bakerley/whattrash" target="_blank" rel="noopener">Access the
                   code</a>
-              </div> -->
-              <h3>This is an on going project ! Stay tuned !</h3>
-              <p><b>About the mission</b></p>
-              <p>This is a personnal project. I would like to train a model in order
-                to classify a picture into categories. I never know in witch trashcan to throw the waste !
-              What I am planning:
+                <a class="be-btn" href="https://wastemanager-vz7dajih4q-nn.a.run.app" target="_blank"
+                  rel="noopener">Access the app</a>
+              </div>
+              <p><b>About the project</b></p>
+              <p>This is a personnal project. I have train a VGG16 model with custom layers in order
+                to classify a picture into 6 categories. The categories represents the main categories of recycling goods.
+                From my personnal experience, I never know in which trashcan to throw the waste and if it is possible to recycle!
+                 Key features included:
               <ul>
-                <li>Find a dataset or create one to categorize waste</li>
-                <li>Train models and evaluate them to find the most accurate. (VGG16 or other)</li>
-                <li>Create a python package with Docker</li>
-                <li>Deploy in a webapp with flask in order to learn</li>
+                <li>User inputs a picture of his waste.</li>
+                <li>The model predicts the type of waste.</li>
+                <li>The user get as output the class, recommendations and docs.</li>
               </ul>
               </p>
-              <picture>
-                <source type="image/webp" srcset="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
-                <img src="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
-              </picture>
+              <p><b>Technical details</b></p>
+              <p>
+              <ul>
+                <li>Built <b>custom dataset</b> from Google Open Image v6.</li>
+                <li>Trained a custom <b>VGG16</b> convolutional neural network in order to <b>class</b> the waste.</li>
+                <li>The trained model has an accuracy of 69.6%.</li>
+                <li>Created an app with <b>Flask</b>.</li>
+                <li>Created the <b>container</b> with <b>Docker</b>.</li>
+                <li>Deployed the container with <b>Google cloud</b>.</li>
+              </ul>
+              </p>
+
               <p><b>Key technologies</b></p>
               <div class="skill-tags-container d-flex flex-row flex-wrap">
                 <span class="skill-tag">Python 3.8</span>
                 <span class="skill-tag">Tensorflow</span>
                 <span class="skill-tag">Flask</span>
                 <span class="skill-tag">Docker</span>
+                <span class="skill-tag">GCP</span>
               </div>
             </div>
             <div class="col-12 col-md-5 h-100">
               <div class="modal-images-container w-100" data-simplebar>
                 <picture>
-                  <source type="image/webp" srcset="images/whatwaste/waste.webp" class="w-100" alt="rebuilt1">
-                  <img src="images/whatwaste/waste.png" class="w-100" alt="rebuilt1">
+                  <source type="image/webp" srcset="images/whatwaste/whatwaste1.webp" class="w-100" alt="whatwaste1">
+                  <img src="images/whatwaste/whatwaste1.png" class="w-100" alt="whatwaste1">
                 </picture>
-<!--                 <picture>
-                  <source type="image/webp" srcset="images/whatwaste/schema.webp" class="w-100" alt="rebuilt2">
-                  <img src="images/whatwaste/schema.webp" class="w-100" alt="rebuilt2">
-                </picture> -->
+                <picture>
+                  <source type="image/webp" srcset="images/whatwaste/whatwaste2.webp" class="w-100" alt="whatwaste2">
+                  <img src="images/whatwaste/whatwaste2.png" class="w-100" alt="whatwaste2">
+                </picture>
+                <picture>
+                  <source type="image/webp" srcset="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
+                  <img src="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
+                </picture>
               </div>
             </div>
           </div>
