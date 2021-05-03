@@ -12,12 +12,29 @@
     gtag('config', 'G-C3J4WNC8EM');
   </script>
   <meta charset="UTF-8">
-  <title>Benoit Michelin - Data scientist - Portfolio</title>
+  <!-- Primary Meta Tags -->
+  <title>Benoit Michelin | Data Scientist Portfolio</title>
+  <meta name="title" content="Benoit Michelin | Data Scientist Portfolio">
+  <meta name="description" content="Please find some of my data science work, data analysis, machine learning models. ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="Benoit Michelin | Data Scientist Portfolio">
+  <meta property="og:description" content="Please find some of my data science work, data analysis, machine learning models. ">
+  <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="Benoit Michelin | Data Scientist Portfolio">
+  <meta property="twitter:description" content="Please find some of my data science work, data analysis, machine learning models. ">
+  <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--, user-scalable=no-->
   <meta name="description"
-    content="Benoit Michelin | Fullstack Developer coding in Ruby on rails, Javascript, React and more. Currently based in Toronto." />
+    content="Benoit Michelin | Data Scientist coding in Python, Javascript, React and more. Currently based in Toronto." />
   <meta name="keywords" content="Css, Frontend, Challenge, Animation">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -173,6 +190,21 @@
               <div class="portfolio-card-content">
                 <h2><i class="fas fa-search"></i></h2>
                 <h4>Whatwaste</h4>
+                <p>Project - 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-item col-12 col-sm-6 col-md-4 side-project">
+            <div id="divingsign" class="portfolio-card w-100 h-100">
+              <picture>
+                <source type="image/webp" srcset="./images/diving/diving.webp" alt="Landing page of diving signs">
+                <img src="./images/diving/diving.png" alt="Landing page of diving signs">
+              </picture>
+              <button type="button" aria-label="First Button diving sign" class="" data-toggle="modal"
+                data-target="#divingproject"></button>
+              <div class="portfolio-card-content">
+                <h2><i class="fas fa-search"></i></h2>
+                <h4>Diving Signs</h4>
                 <p>Project - 2021</p>
               </div>
             </div>
@@ -1021,6 +1053,70 @@ production a clone of AirBnB and a Rails prototype.</p>
                 <picture>
                   <source type="image/webp" srcset="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
                   <img src="images/whatwaste/schema.webp" class="w-100" alt="schemawaste">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="divingproject" tabindex="-1" role="dialog" aria-labelledby="Modal divingsign"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="divingproject">Diving Signs - 2021</h5>
+          <button type="button" aria-label="Button Rebuilt" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <p>The idea of this project was to create an accurate model in order to create an app to learn the diving language.</p>
+              <div class="d-flex justify-content-start align-items-center">
+                <a class="be-btn" href="https://github.com/bakerley/DivingSign" target="_blank" rel="noopener">Access the
+                  code</a>
+              </div>
+              <p><b>About the project</b></p>
+              <p>This is a personnal project. I have train a custom model with Tensorflow. For the data I had to create the data
+               set and label it.</p>
+              <p><b>Technical details</b></p>
+              <p>
+              <ul>
+                <li>Created a dataset with 20 images per signs.</li>
+                <li>Labeled the data set, converted it to tfrecords and preprocessed it.</li>
+                <li>Trained a custom TensorFlow model on colab.</li>
+                <li>Monitored the outputs.</li>
+                <li>Improved the model by adding more data.</li>
+              </ul>
+              </p>
+              <p><b>Next steps</b></p>
+              <p>
+              <ul>
+                <li>Deploy the app.</li>
+                <li>Add more signs.</li>
+              </ul>
+              </p>
+
+              <p><b>Key technologies</b></p>
+              <div class="skill-tags-container d-flex flex-row flex-wrap">
+                <span class="skill-tag">Python 3.8</span>
+                <span class="skill-tag">Tensorflow</span>
+                <span class="skill-tag">Google colab</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 h-100">
+              <div class="modal-images-container w-100" data-simplebar>
+                <picture>
+                  <source type="image/webp" srcset="images/diving/loss.webp" class="w-100" alt="loss1">
+                  <img src="images/diving/loss.png" class="w-100" alt="loss1">
+                </picture>
+                <picture>
+                  <source type="image/webp" srcset="images/diving/detection.webp" class="w-100" alt="detection2">
+                  <img src="images/diving/detection.png" class="w-100" alt="detection2">
                 </picture>
               </div>
             </div>
